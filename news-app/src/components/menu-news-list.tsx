@@ -4,7 +4,7 @@ import { formatDate } from "../data/helpers/formatDate";
 
 interface IMenuListItemProps {
   list: IArticle[];
-  onClickItemHandler(item: IArticle, index: number): void;
+  onClickItemHandler?(item: IArticle, index: number): void;
 }
 
 const MenuListItem: React.FunctionComponent<IMenuListItemProps> = (props) => {
@@ -21,7 +21,7 @@ const MenuListItem: React.FunctionComponent<IMenuListItemProps> = (props) => {
             key={key}
             onClick={(e) => {
               e.preventDefault();
-              onClickItemHandler(item, index);
+              onClickItemHandler && onClickItemHandler(item, index);
             }}
           >
             {item.urlToImage && (

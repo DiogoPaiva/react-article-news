@@ -41,7 +41,7 @@ useEffect(() => {
             });
         }
       )
-  }, [])
+  }, [url])
  
 return [ data, isLoading, hasError];
 
