@@ -1,0 +1,51 @@
+.panel-fadeIn {
+  @include fadeInAnimation;
+}
+.article-container {
+  padding: 5% 7% 7% 7%;
+  .article-title {
+    font-family: $font-Merriweather;
+    font-weight: 600;
+    font-size: calc(26px + 0.5vmin);
+    margin-bottom: 15px;
+    line-height: 1.5em;
+  }
+  .article-description {
+    font-family: $font-Merriweather;
+    font-weight: $font-light;
+    color: $color-grey-555;
+    font-size: calc(14px + 0.5vmin);
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .article-author {
+    margin-bottom: 15px;
+    .icon {
+      margin-right: 5px;
+    }
+  }
+  .article-date {
+    margin-bottom: 15px;
+    .icon {
+      margin-right: 5px;
+    }
+  }
+  .article-content {
+    font-family: $font-Merriweather;
+    font-weight: $font-regular;
+    color: $color-grey-333;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .article-url {
+    .icon {
+      margin-left: 5px;
+    }
+  }
+  .article-image-wrapper {
+    margin-bottom: 35px;
+    .article-image {
+      width: 100%;
+    }
+  }
+}
